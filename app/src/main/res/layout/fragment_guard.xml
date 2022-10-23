@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBg">
+
+    <TextView
+        android:id="@+id/txtSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:elevation="@dimen/dimen_16"
+        android:text="@string/security"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_16_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/pinkCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/pinkCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180"
+        android:layout_margin="@dimen/dimen_16"
+        app:cardBackgroundColor="@color/SOS_bg"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:cardElevation="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/txtSecurity"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textSOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:elevation="@dimen/dimen_16"
+        android:text="@string/sos"
+        android:textColor="#FFF"
+        android:textSize="@dimen/dimen_26_font"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/pinkCard"
+        app:layout_constraintTop_toTopOf="@id/pinkCard" />
+
+    <ImageView
+        android:id="@+id/sosImg"
+        android:layout_width="@dimen/dimen_96"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:elevation="@dimen/dimen_16"
+        android:src="@drawable/ic_sos"
+        app:layout_constraintBottom_toBottomOf="@id/pinkCard"
+        app:layout_constraintEnd_toEndOf="@id/pinkCard"
+        app:layout_constraintTop_toTopOf="@id/pinkCard" />
+
+    <TextView
+        android:id="@+id/emergencyMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:elevation="@dimen/dimen_16"
+        android:layout_marginTop="10dp"
+        android:text="@string/guardTxt"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/pinkCard"
+        app:layout_constraintEnd_toStartOf="@id/sosImg"
+        app:layout_constraintStart_toStartOf="@id/pinkCard"
+        app:layout_constraintTop_toBottomOf="@id/textSOS" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/violetCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180"
+        android:layout_margin="@dimen/dimen_16"
+        app:cardBackgroundColor="#0A85AA"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:cardElevation="@dimen/dimen_16"
+        app:layout_constraintTop_toBottomOf="@id/pinkCard"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textGUARD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16"
+        android:elevation="@dimen/dimen_16"
+        android:text="@string/guard"
+        android:textColor="@color/GYARDCOLOR"
+        android:textSize="@dimen/dimen_26_font"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/violetCard"
+        app:layout_constraintTop_toTopOf="@id/violetCard" />
+
+    <TextView
+        android:id="@+id/sos_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="@dimen/dimen10"
+        android:elevation="@dimen/dimen_16"
+        android:text="@string/sosTxt"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/violetCard"
+        app:layout_constraintEnd_toStartOf="@id/guardImg"
+        app:layout_constraintStart_toStartOf="@id/violetCard"
+        app:layout_constraintTop_toBottomOf="@id/textGUARD" />
+
+    <ImageView
+        android:id="@+id/guardImg"
+        android:layout_width="@dimen/dimen_96"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:elevation="@dimen/dimen_16"
+        android:src="@drawable/ic_guard_sheild"
+        app:layout_constraintBottom_toBottomOf="@id/violetCard"
+        app:layout_constraintEnd_toEndOf="@id/violetCard"
+        app:layout_constraintTop_toTopOf="@id/violetCard" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
